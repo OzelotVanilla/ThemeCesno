@@ -15,6 +15,12 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.2] - 10/07/2023
+
+### Added
+
+* Add pale grey colour `#777777` for punctuation.
+
 ## [0.0.1] - 10/06/2023
 
 ### Added

@@ -3,7 +3,7 @@
     "displayName": "Theme Cesno",
     "publisher": "Cesno",
     "description": "A code theme pack which leaves `keyword` setting in semantic highlight with empty",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "GNU GPL 3.0",
     "repository": {
         "type": "git",

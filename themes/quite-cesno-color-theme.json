@@ -95,6 +95,7 @@
         "operatorOverload": "#a59aca",
         "function": "#2ca9e1",
         "comment": "#b3ada0",
+        "punctuation": "#777777",
         "controlKeyword": "#bc64a4",
     },
     "tokenColors": [
@@ -636,9 +637,9 @@
             }
         },
         {
-            "name": "Member Accessor",
+            "name": "Punctuation",
             "scope": [
-                "punctuation.accessor"
+                "punctuation"
             ],
             "settings": {
                 "foreground": "#777777"

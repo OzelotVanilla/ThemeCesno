@@ -1,0 +1,696 @@
+{
+    "name": "Quiet Cesno",
+    "type": "light",
+    "colors": {
+        "activityBar.background": "#ededf5",
+        "activityBar.foreground": "#705697",
+        "activityBarBadge.background": "#705697",
+        "badge.background": "#705697aa",
+        "button.background": "#705697",
+        "dropdown.background": "#f5f5f5",
+        "editor.background": "#f5f5f5",
+        "editor.findMatchBackground": "#bf9cac",
+        "editor.findMatchHighlightBackground": "#edc9d899",
+        "editor.lineHighlightBackground": "#e4f6d4",
+        "editor.selectionBackground": "#c9d0d9",
+        "editorBracketHighlight.foreground1": "#daa520",
+        "editorBracketHighlight.foreground2": "#da70d6",
+        "editorBracketHighlight.foreground3": "#6459ed",
+        "editorCursor.foreground": "#54494b",
+        "editorGroup.dropBackground": "#c9d0d988",
+        "editorIndentGuide.activeBackground1": "#777777b0",
+        "editorIndentGuide.background1": "#aaaaaa60",
+        "editorLineNumber.activeForeground": "#9769dc",
+        "editorLineNumber.foreground": "#6d705b",
+        "editorWhitespace.foreground": "#aaaaaa",
+        "errorForeground": "#f1897f",
+        "focusBorder": "#9769dc",
+        "inputOption.activeBorder": "#adafb7",
+        "inputValidation.errorBackground": "#ffeaea",
+        "inputValidation.errorBorder": "#f1897f",
+        "inputValidation.infoBackground": "#f2fcff",
+        "inputValidation.infoBorder": "#4ec1e5",
+        "inputValidation.warningBackground": "#fffee2",
+        "inputValidation.warningBorder": "#ffe055",
+        "list.activeSelectionBackground": "#c4d9b1",
+        "list.activeSelectionForeground": "#6c6c6c",
+        "list.highlightForeground": "#9769dc",
+        "list.hoverBackground": "#e0e0e0",
+        "list.inactiveSelectionBackground": "#d3dbcd",
+        "minimap.selectionHighlight": "#c9d0d9",
+        "panel.background": "#f5f5f5",
+        "peekView.border": "#705697",
+        "peekViewEditor.background": "#f2f8fc",
+        "peekViewEditor.matchHighlightBackground": "#c2dfe3",
+        "peekViewResult.background": "#f2f8fc",
+        "peekViewResult.matchHighlightBackground": "#93c6d6",
+        "peekViewTitle.background": "#f2f8fc",
+        "pickerGroup.border": "#749351",
+        "pickerGroup.foreground": "#a6b39b",
+        "ports.iconRunningProcessForeground": "#749351",
+        "progressBar.background": "#705697",
+        "quickInputList.focusBackground": "#cadeb9",
+        "selection.background": "#c9d0d9",
+        "sideBar.background": "#f2f2f2",
+        "sideBarSectionHeader.background": "#ede8ef",
+        "statusBar.background": "#705697",
+        "statusBar.debuggingBackground": "#705697",
+        "statusBar.noFolderBackground": "#705697",
+        "statusBarItem.remoteBackground": "#4e3c69",
+        "tab.lastPinnedBorder": "#c9d0d9",
+        "titleBar.activeBackground": "#c4b7d7",
+        "walkThrough.embeddedEditorBackground": "#00000014",
+        "welcomePage.tileBackground": "#f0f0f7",
+    },
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "label": {
+            "foreground": "#028760",
+            "fontStyle": "bold"
+        },
+        "property": {
+            "foreground": "#d9a62e",
+            "fontStyle": ""
+        },
+        "class": "#67a70c",
+        "class.constructor": {
+            "fontStyle": "bold"
+        },
+        "typeParameter": "#3eb370",
+        "variable": {
+            "fontStyle": ""
+        },
+        "variable.defaultLibrary": {
+            "foreground": "#A69425"
+        },
+        "parameter": {
+            "foreground": "#e0a37e",
+            "fontStyle": ""
+        },
+        "enum": "#e198b4",
+        "enumMember": "#eb9b6f",
+        "interface": "#a7b446",
+        "namespace": "#007bbb",
+        "selfParameter": "#cf747b",
+        "operatorOverload": "#a59aca",
+        "function": "#2ca9e1",
+        "comment": "#b3ada0",
+        "controlKeyword": "#bc64a4",
+    },
+    "tokenColors": [
+        {
+            "name": "String",
+            "scope": [
+                "string",
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#98623c",
+            }
+        },
+        {
+            "name": "Number",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+                "foreground": "#e95295",
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": [
+                "comment",
+                "comment.block.documentation.js",
+                "punctuation.definition.comment.js",
+                "punctuation.definition.comment.ts",
+                "punctuation.definition.comment.tsx",
+                "comment.block.documentation.ts",
+                "comment.block.documentation",
+                "punctuation.definition.comment",
+                "punctuation.definition.comment.begin.documentation.cpp",
+                "punctuation.definition.comment.end.documentation.cpp",
+            ],
+            "settings": {
+                "foreground": "#b3ada0"
+            }
+        },
+        {
+            "name": "Keywords Control",
+            "scope": [
+                "keyword.other.using.directive.cpp",
+                "keyword.other.typedef.cpp",
+                "keyword.control.conditional",
+                "keyword.control.flow",
+                "keyword.control.rust",
+                "keyword.control.trycatch.ts",
+                "keyword.control.switch.ts",
+                "keyword.control.loop.ts",
+                "keywords",
+            ],
+            "settings": {
+                "foreground": "#bc64a4",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            // True and False and NULL and nullptr
+            "name": "Constant",
+            "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.boolean.false.tsx, constant.language.boolean.true.tsx, constant.language.null.tsx, constant.language.undefined.tsx, constant.language.json, constant.language.php, constant.language.null.cs, constant.language.true.cs, constant.language.false.cs",
+            "settings": {
+                "foreground": "#c5c56a",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Enum",
+            "scope": "entity.name.type.enum.cpp,storage.type.enum.cpp,storage.type.enum.declare.cpp, entity.name.type.enum",
+            "settings": {
+                "foreground": "#e198b4",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Enum Member",
+            "scope": [
+                "entity.name.variable.enum-member"
+            ],
+            "settings": {
+                "foreground": "#eb9b6f"
+            }
+        },
+        {
+            "name": "Label",
+            "scope": "entity.name.label.ts",
+            "settings": {
+                "foreground": "#028760",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Code Text Fallback",
+            "scope": [
+                "source"
+            ],
+            "settings": {
+                "foreground": "#333333",
+            }
+        },
+        {
+            "name": "HTML: Attribute",
+            "scope": [
+                "meta.tag entity.other.attribute-name",
+                "entity.other.attribute-name.html"
+            ],
+            "settings": {
+                "foreground": "#f6ad49"
+            }
+        },
+        {
+            "name": "HTML: Tag name",
+            "scope": [
+                "entity.name.tag"
+            ],
+            "settings": {
+                "foreground": "#ac88ff"
+            }
+        },
+        {
+            "name": "HTML: String",
+            "scope": "string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#7fb80e"
+            }
+        },
+        {
+            "name": "HTML Plain Text",
+            "scope": "text.html.derivative",
+            "settings": {
+                "foreground": "#6b6f59"
+            }
+        },
+        {
+            "name": "CSS At Sign (At Sign before Rule)",
+            "scope": "keyword.control.at-rule.keyframes.css",
+            "settings": {
+                "foreground": "#cca6bf",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": [
+                "keyword.operator",
+                "entity.name.function.operator",
+                "entity.name.operator.cpp",
+                "keyword.other.new.cs",
+                "keyword.control.as.ts"
+            ],
+            "settings": {
+                "foreground": "#a59aca",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Variable",
+            // Including fallback
+            "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, meta.object-literal.key.ts, constant.other.caps.rust, entity.name.variable.local",
+            "settings": {
+                "foreground": "#f39800"
+            }
+        },
+        {
+            "name": "Parameter",
+            // Including fallback
+            "scope": [
+                "variable.other.jsdoc",
+                "entity.name.variable.parameter.cs"
+            ],
+            "settings": {
+                "foreground": "#e0a37e"
+            }
+        },
+        {
+            "name": "Member",
+            "scope": "meta.object-literal.key.ts, meta.object-literal.key.js",
+            "settings": {
+                "foreground": "#d9a62e"
+            }
+        },
+        {
+            "name": "Escape (\\ Special Char)",
+            "scope": "constant.character.escape, punctuation.definition.template-expression.begin.js, punctuation.definition.string.template.end.js, punctuation.definition.template-expression.begin.ts, punctuation.definition.template-expression.end.ts",
+            "settings": {
+                "foreground": "#92b5a9"
+            }
+        },
+        {
+            "name": "CSS Property Name",
+            "scope": "support.type.property-name.css, support.type.vendored.property-name.css",
+            "settings": {
+                "foreground": "#ff69b4"
+            }
+        },
+        {
+            "name": "CSS Property Value",
+            "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
+            "settings": {
+                "foreground": "#00a2ed"
+            }
+        },
+        {
+            "name": "CSS Selector Ele",
+            "scope": "entity.name.tag.css",
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS Selector Class",
+            "scope": "entity.other.attribute-name.class.css",
+            "settings": {
+                "foreground": "#f69c9f",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS Color Constant",
+            "scope": "support.constant.color.w3c-extended-color-name.css, support.constant.color.w3c-standard-color-name.css, constant.other.color.rgb-value.hex.css",
+            "settings": {
+                "foreground": "#e6b422"
+            }
+        },
+        {
+            "name": "CSS Pseudo Class",
+            "scope": "entity.other.attribute-name.pseudo-class.css",
+            "settings": {
+                "foreground": "#cca6bf",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS Sharp Sign",
+            "scope": "punctuation.definition.entity.css, punctuation.definition.constant.css",
+            "settings": {
+                "foreground": "#e198b4"
+            }
+        },
+        {
+            "name": "CSS Defined ID",
+            "scope": "entity.other.attribute-name.id.css, punctuation.definition.entity.css",
+            "settings": {
+                "foreground": "#e95295",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS Wildcard Selector",
+            "scope": "entity.name.tag.wildcard.css",
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "CSS Anime Percentage",
+            "scope": "entity.other.keyframe-offset.percentage.css",
+            "settings": {
+                "foreground": "#eb9b6f",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Python Fallback",
+            "scope": "source.python",
+            "settings": {
+                "foreground": "#f39800"
+            }
+        },
+        {
+            "name": "Python Attr Func",
+            "scope": "meta.function-call.python",
+            "settings": {
+                "foreground": "#38a1db"
+            }
+        },
+        {
+            "name": "Python Class Item",
+            "scope": "meta.item-access.python",
+            "settings": {
+                "foreground": "#f58220"
+            }
+        },
+        {
+            "name": "Python Class Name",
+            "scope": "entity.name.type.class.python",
+            "settings": {
+                "foreground": "#50a06e",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Python Inherited Class",
+            "scope": "entity.other.inherited-class",
+            "settings": {
+                "foreground": "#26610F",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Python Class Item Arg",
+            "scope": "meta.item-access.arguments.python",
+            "settings": {
+                "foreground": "#fab27b"
+            }
+        },
+        {
+            "name": "Function Define & Lambda",
+            "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.js, keyword.other.fn.rust, storage.type.function.tsx",
+            "settings": {
+                "foreground": "#0094c8",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Python Lambda",
+            "scope": "storage.type.function.lambda.python",
+            "settings": {
+                "foreground": "#00a497",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Python Constant",
+            "scope": "constant.other.caps.python",
+            "settings": {
+                "foreground": "#c5c56a"
+            }
+        },
+        {
+            "name": "C++ Include",
+            "scope": "string.quoted.other.lt-gt.include.cpp, string.quoted.double.include.cpp, keyword.other.using.cs",
+            "settings": {
+                "foreground": "#c4a3bf",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ Include Sharp Sign",
+            "scope": "punctuation.definition.directive.cpp",
+            "settings": {
+                "foreground": "#9790a4"
+            }
+        },
+        {
+            "name": "Function",
+            "scope": "entity.name.function, keyword.operator.typeid.cpp, support.function.builtin.python, support.function, storage.type.accessor.get, storage.type.accessor.set",
+            "settings": {
+                "foreground": "#2ca9e1",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Type Fallback",
+            "scope": [
+                "storage.type",
+                "support.type",
+                "entity.name.type",
+                "keyword.other.type.php",
+                "source keyword.type.cs",
+                "keyword.other.class.cs",
+                "keyword.type"
+            ],
+            "settings": {
+                "foreground": "#9ed44c",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Class Constructor",
+            "scope": "entity.name.function.constructor.cpp, entity.name.function.definition.special.constructor.cpp, keyword.other.delegate.cs",
+            "settings": {
+                "foreground": "#67a70c",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ \"using namespace\"",
+            "scope": "storage.type.namespace.directive.cpp, keyword.other.namespace.cs",
+            "settings": {
+                "foreground": "#98d98e",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ Namespace's Name",
+            "scope": "entity.name.namespace, entity.name.type.namespace.cs",
+            "settings": {
+                "foreground": "#007bbb",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ Cast",
+            "scope": "keyword.operator.cast",
+            "settings": {
+                "foreground": "#84a2d4"
+            }
+        },
+        {
+            "name": "Modifier",
+            "scope": [
+                "storage.modifier.cpp",
+                "storage.modifier.specifier.const.cpp",
+                "storage.modifier.specifier.volatile.cpp",
+                "storage.modifier.specifier.restrict.cpp",
+                "storage.modifier.specifier.static.cpp",
+                "storage.modifier.java",
+                "storage.modifier.ts",
+                "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
+                "storage.type.modifier.access.control.public.cpp",
+                "storage.type.modifier.access.control.protected.cpp",
+                "storage.type.modifier.access.control.private.cpp",
+                "storage.type.modifier.access.public.cpp",
+                "storage.type.modifier.access.protected.cpp",
+                "storage.type.modifier.access.private.cpp",
+                "storage.modifier.async.js",
+                "storage.modifier.async.ts",
+                "storage.modifier.inline.cpp",
+                "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+                "storage.modifier.mut.rust",
+                "keyword.control.export.ts",
+                "keyword.control.export.js",
+                "keyword.control.export.jsx",
+                "keyword.control.export.tsx",
+                "storage.modifier.static.cpp",
+                "storage.modifier.specifier.functional.post-parameters.const.cpp",
+                "storage.modifier.virtual.cpp",
+                "storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
+                "storage.modifier.friend.cpp",
+                "storage.modifier.specifier.functional.post-parameters.override.cpp",
+                "storage.modifier.specifier.functional.post-parameters.const",
+                "storage.modifier.specifier.extern.cpp",
+                "storage.modifier.extern.cpp",
+                "storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
+                "storage.modifier.const.cpp",
+                "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+                "storage.type.function.async.python",
+                "storage.type.extern.cpp",
+                "storage.modifier.declaration.python",
+                "storage.modifier.php",
+                "storage.modifier.cs",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#68be8d",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ Func Para Modifier (\"&\" and \"*\")",
+            "scope": "storage.modifier.reference.cpp, storage.modifier.pointer.cpp",
+            "settings": {
+                "foreground": "#a59aca"
+            }
+        },
+        {
+            "name": "C++ Struct and Enum",
+            "scope": "storage.type.struct.cpp,  storage.type.struct.declare.cpp",
+            "settings": {
+                "foreground": "#82ae46",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ Preprocessor",
+            "scope": "entity.name.function.preprocessor",
+            "settings": {
+                "foreground": "#c5c56a",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "C++ externed",
+            "scope": "meta.block.extern.cpp",
+            "settings": {
+                "foreground": "#9ea1a3"
+            }
+        },
+        {
+            "name": "Java Const",
+            "scope": "constant.language.java",
+            "settings": {
+                "foreground": "#b79b5b",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "VBA Source (Not highlighted Text)",
+            "scope": "source.vba",
+            "settings": {
+                "foreground": "#3e62ad"
+            }
+        },
+        {
+            // Problematic
+            "name": "Assembly Pseudo Tag",
+            "scope": "source.asm",
+            "settings": {
+                "foreground": "#5d5d74"
+            }
+        },
+        {
+            "name": "Assembly Reg General",
+            "scope": "constant.language.register.general, variable.register.lc3asm",
+            "settings": {
+                "foreground": "#ff9740"
+            }
+        },
+        {
+            "name": "Assembly Reg Segment",
+            "scope": "constant.language.register.segment",
+            "settings": {
+                "foreground": "#ffb02a"
+            }
+        },
+        {
+            "name": "Assembly Fallback",
+            "scope": "support.other.lc3asm",
+            "settings": {
+                "foreground": "#8b2f45",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Self and Super",
+            "scope": [
+                "variable.language.this",
+                "variable.language.special.self.python",
+                "variable.language.super.ts",
+                "variable.language.super.cpp",
+                "keyword.other.this.cs",
+                "keyword.other.super.cs"
+            ],
+            "settings": {
+                "foreground": "#cf747b"
+            }
+        },
+        {
+            "name": "Member Accessor",
+            "scope": [
+                "punctuation.accessor"
+            ],
+            "settings": {
+                "foreground": "#777777"
+            }
+        },
+        {
+            "name": "Class Property",
+            "scope": "variable.other.property.cpp, entity.name.variable.field, entity.name.variable.property, variable.other.object.property",
+            "settings": {
+                "foreground": "#d9a62e"
+            }
+        },
+        {
+            "name": "Class Fallback",
+            "scope": "entity.other.inherited-class.js, entity.other.inherited-class.ts, support.class",
+            "settings": {
+                "foreground": "#67a70c",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Namespace Fallback",
+            "scope": "entity.name.scope-resolution",
+            "settings": {
+                "foreground": "#007bbb",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "MatLab Meta Function",
+            "scope": [
+                "meta.function.matlab",
+                "meta.function.matlab *"
+            ],
+            "settings": {
+                "foreground": "#00a497"
+            }
+        },
+        {
+            "name": "Prefix for Radix or String",
+            "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp, meta.encoding.cpp",
+            "settings": {
+                "foreground": "#3d6eda",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Code Text Fallback",
+            "scope": "source.cpp",
+            "settings": {
+                "foreground": "#777777"
+            }
+        }
+    ]
+}

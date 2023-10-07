@@ -19,7 +19,7 @@ Content
 
 * **Quiet Cesno**: a theme based on builtin theme *Quiet Light*.
 
-![Quiet Light Example](https://github.com/OzelotVanilla/ThemeCesno/blob/master/img/Quiet%20Cesno%20Example.png?raw=true)
+![Quiet Light Example](https://github.com/OzelotVanilla/ThemeCesno/blob/main/img/Quiet%20Cesno%20Example.png?raw=true)
 
 For developers
 ====

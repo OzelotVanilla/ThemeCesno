@@ -95,7 +95,6 @@
         "operatorOverload": "#a59aca",
         "function": "#2ca9e1",
         "comment": "#b3ada0",
-        "punctuation": "#777777",
         "controlKeyword": "#bc64a4",
     },
     "tokenColors": [
@@ -144,9 +143,10 @@
                 "keyword.control.conditional",
                 "keyword.control.flow",
                 "keyword.control.rust",
-                "keyword.control.trycatch.ts",
-                "keyword.control.switch.ts",
-                "keyword.control.loop.ts",
+                "keyword.control.trycatch",
+                "keyword.control.switch",
+                "keyword.control.loop",
+                "keyword.control.default",
                 "keywords",
             ],
             "settings": {
@@ -181,6 +181,16 @@
             }
         },
         {
+            "name": "Trait (Interface)",
+            "scope": [
+                "entity.name.type.interface"
+            ],
+            "settings": {
+                "foreground": "#a7b446",
+                "fontStyle": "bold"
+            }
+        },
+        {
             "name": "Label",
             "scope": "entity.name.label.ts",
             "settings": {
@@ -195,6 +205,7 @@
             ],
             "settings": {
                 "foreground": "#333333",
+                "fontStyle": ""
             }
         },
         {
@@ -225,10 +236,21 @@
             }
         },
         {
-            "name": "HTML Plain Text",
-            "scope": "text.html.derivative",
+            "name": "HTML: Plain Text",
+            "scope": [
+                "text.html.derivative",
+            ],
             "settings": {
                 "foreground": "#6b6f59"
+            }
+        },
+        {
+            "name": "Markdown: Text",
+            "scope": [
+                "text.html.markdown"
+            ],
+            "settings": {
+                "foreground": "#333333",
             }
         },
         {
@@ -246,7 +268,9 @@
                 "entity.name.function.operator",
                 "entity.name.operator.cpp",
                 "keyword.other.new.cs",
-                "keyword.control.as.ts"
+                "keyword.control.as.ts",
+                "storage.modifier.reference.cpp",
+                "storage.modifier.pointer.cpp"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -428,8 +452,17 @@
             }
         },
         {
-            "name": "C++ Include",
-            "scope": "string.quoted.other.lt-gt.include.cpp, string.quoted.double.include.cpp, keyword.other.using.cs",
+            "name": "Name Resolution Related Keywords (e.g. C++ Include)",
+            "scope": [
+                "string.quoted.other.lt-gt.include.cpp",
+                "string.quoted.double.include.cpp",
+                "keyword.other.using.cs",
+                "keyword.control.import",
+                "keyword.control.from.ts",
+                "keyword.control.from.tsx",
+                "keyword.control.from.js",
+                "keyword.control.from.jsx",
+            ],
             "settings": {
                 "foreground": "#c4a3bf",
                 "fontStyle": "bold"
@@ -548,13 +581,6 @@
             }
         },
         {
-            "name": "C++ Func Para Modifier (\"&\" and \"*\")",
-            "scope": "storage.modifier.reference.cpp, storage.modifier.pointer.cpp",
-            "settings": {
-                "foreground": "#a59aca"
-            }
-        },
-        {
             "name": "C++ Struct and Enum",
             "scope": "storage.type.struct.cpp,  storage.type.struct.declare.cpp",
             "settings": {
@@ -638,11 +664,15 @@
         },
         {
             "name": "Punctuation",
+            // Should not use `punctuation` here, because even assignment `=` will be considered as punc here.
             "scope": [
-                "punctuation"
+                "punctuation.separator",
+                "punctuation.terminator",
+                "punctuation.definition"
             ],
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#777777",
+                "fontStyle": ""
             }
         },
         {

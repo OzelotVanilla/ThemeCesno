@@ -239,6 +239,7 @@
             "name": "HTML: Plain Text",
             "scope": [
                 "text.html.derivative",
+                "meta.jsx.children"
             ],
             "settings": {
                 "foreground": "#6b6f59"
@@ -264,13 +265,18 @@
         {
             "name": "Operators",
             "scope": [
-                "keyword.operator",
                 "entity.name.function.operator",
                 "entity.name.operator.cpp",
                 "keyword.other.new.cs",
                 "keyword.control.as.ts",
                 "storage.modifier.reference.cpp",
-                "storage.modifier.pointer.cpp"
+                "storage.modifier.pointer.cpp",
+                "keyword.operator.arithmetic",
+                "keyword.operator.assignment",
+                "keyword.operator.comparison",
+                "keyword.operator.new",
+                "keyword.operator.expression",
+                "keyword.operator.logical"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -430,7 +436,15 @@
         },
         {
             "name": "Function Define & Lambda",
-            "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.js, keyword.other.fn.rust, storage.type.function.tsx",
+            "scope": [
+                "storage.type.function.python",
+                "keyword.other.operator.overload.cpp",
+                "storage.type.function.ts",
+                "storage.type.function.js",
+                "keyword.other.fn.rust",
+                "storage.type.function.tsx",
+                "keyword.operator.arrow.cs"
+            ],
             "settings": {
                 "foreground": "#0094c8",
                 "fontStyle": "bold"
@@ -462,6 +476,7 @@
                 "keyword.control.from.tsx",
                 "keyword.control.from.js",
                 "keyword.control.from.jsx",
+                "keyword.control.at-rule.import.scss"
             ],
             "settings": {
                 "foreground": "#c4a3bf",
@@ -710,9 +725,24 @@
         },
         {
             "name": "Prefix for Radix or String",
-            "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp, meta.encoding.cpp",
+            "scope": [
+                "keyword.other.unit.hexadecimal",
+                "keyword.other.unit.binary",
+                "keyword.other.unit.octal",
+                "meta.encoding.cpp"
+            ],
             "settings": {
                 "foreground": "#3d6eda",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Number Unit (e.g. CSS Unit)",
+            "scope": [
+                "keyword.other.unit"
+            ],
+            "settings": {
+                "foreground": "#3967c4",
                 "fontStyle": "bold"
             }
         },

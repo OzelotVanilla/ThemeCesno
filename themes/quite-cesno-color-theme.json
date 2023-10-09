@@ -105,7 +105,7 @@
                 "support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#98623c",
+                "foreground": "#98623c"
             }
         },
         {
@@ -114,7 +114,7 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#e95295",
+                "foreground": "#e95295"
             }
         },
         {
@@ -157,7 +157,31 @@
         {
             // True and False and NULL and nullptr
             "name": "Constant",
-            "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.boolean.false.tsx, constant.language.boolean.true.tsx, constant.language.null.tsx, constant.language.undefined.tsx, constant.language.json, constant.language.php, constant.language.null.cs, constant.language.true.cs, constant.language.false.cs",
+            "scope": [
+                "constant.language.true.cpp",
+                "constant.language.false.cpp",
+                "constant.language.NULL.cpp",
+                "constant.language.nullptr.cpp",
+                "constant.language.python",
+                "constant.language.boolean.true.js",
+                "constant.language.boolean.false.js",
+                "constant.language.null.js",
+                "constant.language.undefined.js",
+                "constant.language.matlab",
+                "constant.language.null.ts",
+                "constant.language.undefined.ts",
+                "constant.language.boolean.false.ts",
+                "constant.language.boolean.true.ts",
+                "constant.language.boolean.false.tsx",
+                "constant.language.boolean.true.tsx",
+                "constant.language.null.tsx",
+                "constant.language.undefined.tsx",
+                "constant.language.json",
+                "constant.language.php",
+                "constant.language.null.cs",
+                "constant.language.true.cs",
+                "constant.language.false.cs"
+            ],
             "settings": {
                 "foreground": "#c5c56a",
                 "fontStyle": "bold"
@@ -165,7 +189,12 @@
         },
         {
             "name": "Enum",
-            "scope": "entity.name.type.enum.cpp,storage.type.enum.cpp,storage.type.enum.declare.cpp, entity.name.type.enum",
+            "scope": [
+                "entity.name.type.enum.cpp",
+                "storage.type.enum.cpp",
+                "storage.type.enum.declare.cpp",
+                "entity.name.type.enum"
+            ],
             "settings": {
                 "foreground": "#e198b4",
                 "fontStyle": "bold"
@@ -192,7 +221,9 @@
         },
         {
             "name": "Label",
-            "scope": "entity.name.label.ts",
+            "scope": [
+                "entity.name.label.ts"
+            ],
             "settings": {
                 "foreground": "#028760",
                 "fontStyle": "bold"
@@ -229,7 +260,11 @@
         },
         {
             "name": "HTML: String",
-            "scope": "string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
+            "scope": [
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html",
+                "punctuation.definition.string.end.html"
+            ],
             "settings": {
                 "fontStyle": "",
                 "foreground": "#7fb80e"
@@ -251,12 +286,14 @@
                 "text.html.markdown"
             ],
             "settings": {
-                "foreground": "#333333",
+                "foreground": "#333333"
             }
         },
         {
             "name": "CSS At Sign (At Sign before Rule)",
-            "scope": "keyword.control.at-rule.keyframes.css",
+            "scope": [
+                "keyword.control.at-rule.keyframes.css"
+            ],
             "settings": {
                 "foreground": "#cca6bf",
                 "fontStyle": "bold"
@@ -286,7 +323,15 @@
         {
             "name": "Variable",
             // Including fallback
-            "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, meta.object-literal.key.ts, constant.other.caps.rust, entity.name.variable.local",
+            "scope": [
+                "variable",
+                "support.variable",
+                "meta.method.body.java",
+                "meta.method-call.java",
+                "meta.object-literal.key.ts",
+                "constant.other.caps.rust",
+                "entity.name.variable.local"
+            ],
             "settings": {
                 "foreground": "#f39800"
             }
@@ -304,42 +349,61 @@
         },
         {
             "name": "Member",
-            "scope": "meta.object-literal.key.ts, meta.object-literal.key.js",
+            "scope": [
+                "meta.object-literal.key.ts",
+                "meta.object-literal.key.js"
+            ],
             "settings": {
                 "foreground": "#d9a62e"
             }
         },
         {
             "name": "Escape (\\ Special Char)",
-            "scope": "constant.character.escape, punctuation.definition.template-expression.begin.js, punctuation.definition.string.template.end.js, punctuation.definition.template-expression.begin.ts, punctuation.definition.template-expression.end.ts",
+            "scope": [
+                "constant.character.escape",
+                "punctuation.definition.template-expression.begin.js",
+                "punctuation.definition.string.template.end.js",
+                "punctuation.definition.template-expression.begin.ts",
+                "punctuation.definition.template-expression.end.ts"
+            ],
             "settings": {
                 "foreground": "#92b5a9"
             }
         },
         {
             "name": "CSS Property Name",
-            "scope": "support.type.property-name.css, support.type.vendored.property-name.css",
+            "scope": [
+                "support.type.property-name.css",
+                "support.type.vendored.property-name.css"
+            ],
             "settings": {
                 "foreground": "#ff69b4"
             }
         },
         {
             "name": "CSS Property Value",
-            "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
+            "scope": [
+                "meta.property-group support.constant.property-value.css",
+                "meta.property-value support.constant.property-value.css"
+            ],
             "settings": {
                 "foreground": "#00a2ed"
             }
         },
         {
             "name": "CSS Selector Ele",
-            "scope": "entity.name.tag.css",
+            "scope": [
+                "entity.name.tag.css"
+            ],
             "settings": {
                 "fontStyle": "bold"
             }
         },
         {
             "name": "CSS Selector Class",
-            "scope": "entity.other.attribute-name.class.css",
+            "scope": [
+                "entity.other.attribute-name.class.css"
+            ],
             "settings": {
                 "foreground": "#f69c9f",
                 "fontStyle": "bold"
@@ -347,14 +411,20 @@
         },
         {
             "name": "CSS Color Constant",
-            "scope": "support.constant.color.w3c-extended-color-name.css, support.constant.color.w3c-standard-color-name.css, constant.other.color.rgb-value.hex.css",
+            "scope": [
+                "support.constant.color.w3c-extended-color-name.css",
+                "support.constant.color.w3c-standard-color-name.css",
+                "constant.other.color.rgb-value.hex.css"
+            ],
             "settings": {
                 "foreground": "#e6b422"
             }
         },
         {
             "name": "CSS Pseudo Class",
-            "scope": "entity.other.attribute-name.pseudo-class.css",
+            "scope": [
+                "entity.other.attribute-name.pseudo-class.css"
+            ],
             "settings": {
                 "foreground": "#cca6bf",
                 "fontStyle": "bold"
@@ -362,14 +432,20 @@
         },
         {
             "name": "CSS Sharp Sign",
-            "scope": "punctuation.definition.entity.css, punctuation.definition.constant.css",
+            "scope": [
+                "punctuation.definition.entity.css",
+                "punctuation.definition.constant.css"
+            ],
             "settings": {
                 "foreground": "#e198b4"
             }
         },
         {
             "name": "CSS Defined ID",
-            "scope": "entity.other.attribute-name.id.css, punctuation.definition.entity.css",
+            "scope": [
+                "entity.other.attribute-name.id.css",
+                "punctuation.definition.entity.css"
+            ],
             "settings": {
                 "foreground": "#e95295",
                 "fontStyle": "bold"
@@ -377,14 +453,18 @@
         },
         {
             "name": "CSS Wildcard Selector",
-            "scope": "entity.name.tag.wildcard.css",
+            "scope": [
+                "entity.name.tag.wildcard.css"
+            ],
             "settings": {
                 "fontStyle": "bold"
             }
         },
         {
             "name": "CSS Anime Percentage",
-            "scope": "entity.other.keyframe-offset.percentage.css",
+            "scope": [
+                "entity.other.keyframe-offset.percentage.css"
+            ],
             "settings": {
                 "foreground": "#eb9b6f",
                 "fontStyle": "bold"
@@ -392,28 +472,36 @@
         },
         {
             "name": "Python Fallback",
-            "scope": "source.python",
+            "scope": [
+                "source.python"
+            ],
             "settings": {
                 "foreground": "#f39800"
             }
         },
         {
             "name": "Python Attr Func",
-            "scope": "meta.function-call.python",
+            "scope": [
+                "meta.function-call.python"
+            ],
             "settings": {
                 "foreground": "#38a1db"
             }
         },
         {
             "name": "Python Class Item",
-            "scope": "meta.item-access.python",
+            "scope": [
+                "meta.item-access.python"
+            ],
             "settings": {
                 "foreground": "#f58220"
             }
         },
         {
             "name": "Python Class Name",
-            "scope": "entity.name.type.class.python",
+            "scope": [
+                "entity.name.type.class.python"
+            ],
             "settings": {
                 "foreground": "#50a06e",
                 "fontStyle": "bold"
@@ -421,7 +509,9 @@
         },
         {
             "name": "Python Inherited Class",
-            "scope": "entity.other.inherited-class",
+            "scope": [
+                "entity.other.inherited-class"
+            ],
             "settings": {
                 "foreground": "#26610F",
                 "fontStyle": "bold"
@@ -429,7 +519,9 @@
         },
         {
             "name": "Python Class Item Arg",
-            "scope": "meta.item-access.arguments.python",
+            "scope": [
+                "meta.item-access.arguments.python"
+            ],
             "settings": {
                 "foreground": "#fab27b"
             }
@@ -452,7 +544,9 @@
         },
         {
             "name": "Python Lambda",
-            "scope": "storage.type.function.lambda.python",
+            "scope": [
+                "storage.type.function.lambda.python"
+            ],
             "settings": {
                 "foreground": "#00a497",
                 "fontStyle": "bold"
@@ -460,7 +554,9 @@
         },
         {
             "name": "Python Constant",
-            "scope": "constant.other.caps.python",
+            "scope": [
+                "constant.other.caps.python"
+            ],
             "settings": {
                 "foreground": "#c5c56a"
             }
@@ -485,14 +581,23 @@
         },
         {
             "name": "C++ Include Sharp Sign",
-            "scope": "punctuation.definition.directive.cpp",
+            "scope": [
+                "punctuation.definition.directive.cpp"
+            ],
             "settings": {
                 "foreground": "#9790a4"
             }
         },
         {
             "name": "Function",
-            "scope": "entity.name.function, keyword.operator.typeid.cpp, support.function.builtin.python, support.function, storage.type.accessor.get, storage.type.accessor.set",
+            "scope": [
+                "entity.name.function",
+                "keyword.operator.typeid.cpp",
+                "support.function.builtin.python",
+                "support.function",
+                "storage.type.accessor.get",
+                "storage.type.accessor.set"
+            ],
             "settings": {
                 "foreground": "#2ca9e1",
                 "fontStyle": ""
@@ -516,7 +621,11 @@
         },
         {
             "name": "Class Constructor",
-            "scope": "entity.name.function.constructor.cpp, entity.name.function.definition.special.constructor.cpp, keyword.other.delegate.cs",
+            "scope": [
+                "entity.name.function.constructor.cpp",
+                "entity.name.function.definition.special.constructor.cpp",
+                "keyword.other.delegate.cs"
+            ],
             "settings": {
                 "foreground": "#67a70c",
                 "fontStyle": "bold"
@@ -524,7 +633,10 @@
         },
         {
             "name": "C++ \"using namespace\"",
-            "scope": "storage.type.namespace.directive.cpp, keyword.other.namespace.cs",
+            "scope": [
+                "storage.type.namespace.directive.cpp",
+                "keyword.other.namespace.cs"
+            ],
             "settings": {
                 "foreground": "#98d98e",
                 "fontStyle": "bold"
@@ -532,7 +644,10 @@
         },
         {
             "name": "C++ Namespace's Name",
-            "scope": "entity.name.namespace, entity.name.type.namespace.cs",
+            "scope": [
+                "entity.name.namespace",
+                "entity.name.type.namespace.cs"
+            ],
             "settings": {
                 "foreground": "#007bbb",
                 "fontStyle": "bold"
@@ -540,7 +655,9 @@
         },
         {
             "name": "C++ Cast",
-            "scope": "keyword.operator.cast",
+            "scope": [
+                "keyword.operator.cast"
+            ],
             "settings": {
                 "foreground": "#84a2d4"
             }
@@ -597,7 +714,10 @@
         },
         {
             "name": "C++ Struct and Enum",
-            "scope": "storage.type.struct.cpp,  storage.type.struct.declare.cpp",
+            "scope": [
+                "storage.type.struct.cpp",
+                "storage.type.struct.declare.cpp"
+            ],
             "settings": {
                 "foreground": "#82ae46",
                 "fontStyle": "bold"
@@ -605,7 +725,9 @@
         },
         {
             "name": "C++ Preprocessor",
-            "scope": "entity.name.function.preprocessor",
+            "scope": [
+                "entity.name.function.preprocessor"
+            ],
             "settings": {
                 "foreground": "#c5c56a",
                 "fontStyle": "bold"
@@ -613,14 +735,18 @@
         },
         {
             "name": "C++ externed",
-            "scope": "meta.block.extern.cpp",
+            "scope": [
+                "meta.block.extern.cpp"
+            ],
             "settings": {
                 "foreground": "#9ea1a3"
             }
         },
         {
             "name": "Java Const",
-            "scope": "constant.language.java",
+            "scope": [
+                "constant.language.java"
+            ],
             "settings": {
                 "foreground": "#b79b5b",
                 "fontStyle": "bold"
@@ -628,7 +754,9 @@
         },
         {
             "name": "VBA Source (Not highlighted Text)",
-            "scope": "source.vba",
+            "scope": [
+                "source.vba"
+            ],
             "settings": {
                 "foreground": "#3e62ad"
             }
@@ -636,28 +764,37 @@
         {
             // Problematic
             "name": "Assembly Pseudo Tag",
-            "scope": "source.asm",
+            "scope": [
+                "source.asm"
+            ],
             "settings": {
                 "foreground": "#5d5d74"
             }
         },
         {
             "name": "Assembly Reg General",
-            "scope": "constant.language.register.general, variable.register.lc3asm",
+            "scope": [
+                "constant.language.register.general",
+                "variable.register.lc3asm"
+            ],
             "settings": {
                 "foreground": "#ff9740"
             }
         },
         {
             "name": "Assembly Reg Segment",
-            "scope": "constant.language.register.segment",
+            "scope": [
+                "constant.language.register.segment"
+            ],
             "settings": {
                 "foreground": "#ffb02a"
             }
         },
         {
             "name": "Assembly Fallback",
-            "scope": "support.other.lc3asm",
+            "scope": [
+                "support.other.lc3asm"
+            ],
             "settings": {
                 "foreground": "#8b2f45",
                 "fontStyle": "bold"
@@ -692,14 +829,24 @@
         },
         {
             "name": "Class Property",
-            "scope": "variable.other.property.cpp, entity.name.variable.field, entity.name.variable.property, variable.other.object.property",
+            "scope": [
+                "variable.other.property.cpp",
+                "entity.name.variable.field",
+                "entity.name.variable.property",
+                "variable.other.object.property",
+                "meta.attribute.python"
+            ],
             "settings": {
                 "foreground": "#d9a62e"
             }
         },
         {
             "name": "Class Fallback",
-            "scope": "entity.other.inherited-class.js, entity.other.inherited-class.ts, support.class",
+            "scope": [
+                "entity.other.inherited-class.js",
+                "entity.other.inherited-class.ts",
+                "support.class"
+            ],
             "settings": {
                 "foreground": "#67a70c",
                 "fontStyle": "bold"
@@ -707,7 +854,9 @@
         },
         {
             "name": "Namespace Fallback",
-            "scope": "entity.name.scope-resolution",
+            "scope": [
+                "entity.name.scope-resolution"
+            ],
             "settings": {
                 "foreground": "#007bbb",
                 "fontStyle": "bold"
@@ -748,7 +897,9 @@
         },
         {
             "name": "Code Text Fallback",
-            "scope": "source.cpp",
+            "scope": [
+                "source.cpp"
+            ],
             "settings": {
                 "foreground": "#777777"
             }

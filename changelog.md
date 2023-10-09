@@ -15,6 +15,18 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.3]
+
+### Fixed
+
+* Wrong fallback "bold" style.
+* Too greedy punctuation.
+
+### Added
+
+* Example picture of *Quiet Cesno*.
+* Various tokens are with highlight colour now.
+
 ## [0.0.2] - 10/07/2023
 
 ### Added

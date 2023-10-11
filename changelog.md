@@ -15,6 +15,18 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.4]
+
+### Fixed
+
+* Some control keywords or operators not highlighted correctly.
+* Class member accessor added to punctuation.
+* Function declaration colour added.
+
+### Added
+
+* HTML tag attribute is now in italic.
+
 ## [0.0.3]
 
 ### Fixed

@@ -147,7 +147,11 @@
                 "keyword.control.switch",
                 "keyword.control.loop",
                 "keyword.control.default",
-                "keywords",
+                "keyword.control.if",
+                "keyword.control.else",
+                "keyword.control.for",
+                "keyword.control.while",
+                "keyword",
             ],
             "settings": {
                 "foreground": "#bc64a4",
@@ -246,7 +250,8 @@
                 "entity.other.attribute-name.html"
             ],
             "settings": {
-                "foreground": "#f6ad49"
+                "foreground": "#f6ad49",
+                "fontStyle": "italic"
             }
         },
         {
@@ -300,7 +305,7 @@
             }
         },
         {
-            "name": "Operators",
+            "name": "Operator Fallback",
             "scope": [
                 "entity.name.function.operator",
                 "entity.name.operator.cpp",
@@ -313,7 +318,12 @@
                 "keyword.operator.comparison",
                 "keyword.operator.new",
                 "keyword.operator.expression",
-                "keyword.operator.logical"
+                "keyword.operator.logical",
+                "keyword.operator.type",
+                "keyword.operator.ternary",
+                "keyword.operator.spread",
+                "keyword.operator.increment",
+                "keyword.operator.decrement"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -535,6 +545,13 @@
                 "storage.type.function.js",
                 "keyword.other.fn.rust",
                 "storage.type.function.tsx",
+                "storage.type.function.ts",
+                "storage.type.function.jsx",
+                "storage.type.function.js",
+                "storage.type.function.arrow.tsx",
+                "storage.type.function.arrow.ts",
+                "storage.type.function.arrow.jsx",
+                "storage.type.function.arrow.js",
                 "keyword.operator.arrow.cs"
             ],
             "settings": {
@@ -612,6 +629,10 @@
                 "keyword.other.type.php",
                 "source keyword.type.cs",
                 "keyword.other.class.cs",
+                "keyword.operator.optional.tsx",
+                "keyword.operator.optional.ts",
+                "keyword.operator.optional.jsx",
+                "keyword.operator.optional.js",
                 "keyword.type"
             ],
             "settings": {
@@ -820,7 +841,12 @@
             "scope": [
                 "punctuation.separator",
                 "punctuation.terminator",
-                "punctuation.definition"
+                "punctuation.definition",
+                "punctuation.accessor",
+                "keyword.operator.type.annotation.tsx",
+                "keyword.operator.type.annotation.ts",
+                "keyword.operator.type.annotation.jsx",
+                "keyword.operator.type.annotation.js",
             ],
             "settings": {
                 "foreground": "#777777",

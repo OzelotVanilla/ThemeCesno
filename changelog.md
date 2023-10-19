@@ -15,6 +15,18 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.5]
+
+### Fixed
+
+* Some operators cannot be highlighted correctly.
+* Object member fallback.
+
+### Change
+
+* For visual enhance, and TS type notation, arrow in arrow function is now
+  rendered as "type".
+
 ## [0.0.4]
 
 ### Fixed

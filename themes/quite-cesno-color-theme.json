@@ -311,11 +311,15 @@
                 "entity.name.operator.cpp",
                 "keyword.other.new.cs",
                 "keyword.control.as.ts",
+                "keyword.control.as.tsx",
+                "keyword.control.as.js",
+                "keyword.control.as.jsx",
                 "storage.modifier.reference.cpp",
                 "storage.modifier.pointer.cpp",
                 "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
                 "keyword.operator.comparison",
+                "keyword.operator.relational",
                 "keyword.operator.new",
                 "keyword.operator.expression",
                 "keyword.operator.logical",
@@ -323,7 +327,7 @@
                 "keyword.operator.ternary",
                 "keyword.operator.spread",
                 "keyword.operator.increment",
-                "keyword.operator.decrement"
+                "keyword.operator.decrement",
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -360,8 +364,7 @@
         {
             "name": "Member",
             "scope": [
-                "meta.object-literal.key.ts",
-                "meta.object-literal.key.js"
+                "meta.object-literal.key"
             ],
             "settings": {
                 "foreground": "#d9a62e"
@@ -548,10 +551,6 @@
                 "storage.type.function.ts",
                 "storage.type.function.jsx",
                 "storage.type.function.js",
-                "storage.type.function.arrow.tsx",
-                "storage.type.function.arrow.ts",
-                "storage.type.function.arrow.jsx",
-                "storage.type.function.arrow.js",
                 "keyword.operator.arrow.cs"
             ],
             "settings": {
@@ -633,6 +632,7 @@
                 "keyword.operator.optional.ts",
                 "keyword.operator.optional.jsx",
                 "keyword.operator.optional.js",
+                "storage.type.function.arrow", // For visual enhance, and TS type notation
                 "keyword.type"
             ],
             "settings": {
@@ -847,6 +847,10 @@
                 "keyword.operator.type.annotation.ts",
                 "keyword.operator.type.annotation.jsx",
                 "keyword.operator.type.annotation.js",
+                "meta.field.declaration",
+                "meta.type.annotation",
+                "punctuation.destructuring",
+                "meta.parameter.object-binding-pattern"
             ],
             "settings": {
                 "foreground": "#777777",

@@ -15,6 +15,12 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.6]
+
+### Fixed
+
+* Some operators cannot be highlighted correctly.
+
 ## [0.0.5]
 
 ### Fixed

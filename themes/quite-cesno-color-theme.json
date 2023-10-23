@@ -328,6 +328,8 @@
                 "keyword.operator.spread",
                 "keyword.operator.increment",
                 "keyword.operator.decrement",
+                "keyword.operator.bitwise",
+                "keyword.operator.sizeof.cpp"
             ],
             "settings": {
                 "foreground": "#a59aca",

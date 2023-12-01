@@ -78,11 +78,12 @@
         },
         "typeParameter": "#3eb370",
         "variable": {
-            "fontStyle": ""
+            "foreground": "#f39800"
         },
         "variable.defaultLibrary": {
             "foreground": "#A69425"
         },
+        "builtinConstant": "#c5c56a",
         "parameter": {
             "foreground": "#e0a37e",
             "fontStyle": ""
@@ -92,17 +93,48 @@
         "interface": "#a7b446",
         "namespace": "#007bbb",
         "selfParameter": "#cf747b",
+        "operator": {
+            "foreground": "#a59aca",
+            "fontStyle": "bold"
+        },
         "operatorOverload": "#a59aca",
         "function": "#2ca9e1",
         "comment": "#b3ada0",
         "controlKeyword": "#bc64a4",
+        // "string": "#98623c"
     },
     "tokenColors": [
         {
+            "name": "Type Fallback",
+            "scope": [
+                "storage.type",
+                "support.type",
+                "entity.name.type",
+                "keyword.other.type.php",
+                "source keyword.type.cs",
+                "keyword.other.class.cs",
+                "keyword.operator.optional.tsx",
+                "keyword.operator.optional.ts",
+                "keyword.operator.optional.jsx",
+                "keyword.operator.optional.js",
+                "storage.type.function.arrow", // For visual enhance, and TS type notation
+                "keyword.other.enum.cs",
+                "keyword.type",
+                "meta.encoding",
+                "keyword.other.suffix.literal.user-defined.string"
+            ],
+            "settings": {
+                "foreground": "#9ed44c",
+                "fontStyle": "bold"
+            }
+        },
+        {
             "name": "String",
             "scope": [
-                "string",
-                "support.type.property-name.json"
+                "support.type.property-name.json",
+                "string.quoted.double",
+                "string.quoted.single",
+                // "string"
             ],
             "settings": {
                 "foreground": "#98623c"
@@ -133,29 +165,6 @@
             ],
             "settings": {
                 "foreground": "#b3ada0"
-            }
-        },
-        {
-            "name": "Keywords Control",
-            "scope": [
-                "keyword.other.using.directive.cpp",
-                "keyword.other.typedef.cpp",
-                "keyword.control.conditional",
-                "keyword.control.flow",
-                "keyword.control.rust",
-                "keyword.control.trycatch",
-                "keyword.control.switch",
-                "keyword.control.loop",
-                "keyword.control.default",
-                "keyword.control.if",
-                "keyword.control.else",
-                "keyword.control.for",
-                "keyword.control.while",
-                "keyword",
-            ],
-            "settings": {
-                "foreground": "#bc64a4",
-                "fontStyle": "bold"
             }
         },
         {
@@ -329,10 +338,41 @@
                 "keyword.operator.increment",
                 "keyword.operator.decrement",
                 "keyword.operator.bitwise",
-                "keyword.operator.sizeof.cpp"
+                "keyword.operator.wordlike",
+                "keyword.operator.sizeof.cpp",
             ],
             "settings": {
                 "foreground": "#a59aca",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords Control (and Keyword Fallback)",
+            "scope": [
+                "keyword.other.using.directive.cpp",
+                "keyword.other.typedef.cpp",
+                "keyword.control.conditional",
+                "keyword.control.flow",
+                "keyword.control.rust",
+                "keyword.control.trycatch",
+                "keyword.control.switch",
+                "keyword.control.loop",
+                "keyword.control.default",
+                "keyword.control.if",
+                "keyword.control.else",
+                "keyword.control.for",
+                "keyword.control.while",
+                "keyword.control.break.cpp",
+                "keyword.control.continue.cpp",
+                "keyword.control.do.cpp",
+                "keyword.control.return",
+                "keyword.control.throw",
+                "keyword.control.directive",
+                "keyword.other.verilog",
+                "keyword.other.important"
+            ],
+            "settings": {
+                "foreground": "#bc64a4",
                 "fontStyle": "bold"
             }
         },
@@ -379,7 +419,8 @@
                 "punctuation.definition.template-expression.begin.js",
                 "punctuation.definition.string.template.end.js",
                 "punctuation.definition.template-expression.begin.ts",
-                "punctuation.definition.template-expression.end.ts"
+                "punctuation.definition.template-expression.end.ts",
+                "constant.character.format.placeholder.other.python"
             ],
             "settings": {
                 "foreground": "#92b5a9"
@@ -582,8 +623,7 @@
         {
             "name": "Name Resolution Related Keywords (e.g. C++ Include)",
             "scope": [
-                "string.quoted.other.lt-gt.include.cpp",
-                "string.quoted.double.include.cpp",
+                "keyword.control.directive.include.cpp",
                 "keyword.other.using.cs",
                 "keyword.control.import",
                 "keyword.control.from.ts",
@@ -598,6 +638,16 @@
             }
         },
         {
+            "name": "Name Resolution Path",
+            "scope": [
+                "string.quoted.double.include.cpp",
+                "string.quoted.other.lt-gt.include.cpp"
+            ],
+            "settings": {
+                "foreground": "#c4a3bf"
+            }
+        },
+        {
             "name": "C++ Include Sharp Sign",
             "scope": [
                 "punctuation.definition.directive.cpp"
@@ -607,39 +657,20 @@
             }
         },
         {
-            "name": "Function",
+            "name": "Function Fallback",
             "scope": [
                 "entity.name.function",
                 "keyword.operator.typeid.cpp",
                 "support.function.builtin.python",
                 "support.function",
                 "storage.type.accessor.get",
-                "storage.type.accessor.set"
+                "storage.type.accessor.set",
+                "keyword.other.get.cs",
+                "keyword.other.set.cs"
             ],
             "settings": {
                 "foreground": "#2ca9e1",
                 "fontStyle": ""
-            }
-        },
-        {
-            "name": "Type Fallback",
-            "scope": [
-                "storage.type",
-                "support.type",
-                "entity.name.type",
-                "keyword.other.type.php",
-                "source keyword.type.cs",
-                "keyword.other.class.cs",
-                "keyword.operator.optional.tsx",
-                "keyword.operator.optional.ts",
-                "keyword.operator.optional.jsx",
-                "keyword.operator.optional.js",
-                "storage.type.function.arrow", // For visual enhance, and TS type notation
-                "keyword.type"
-            ],
-            "settings": {
-                "foreground": "#9ed44c",
-                "fontStyle": "bold"
             }
         },
         {
@@ -711,6 +742,10 @@
                 "keyword.control.export.js",
                 "keyword.control.export.jsx",
                 "keyword.control.export.tsx",
+                "keyword.control.default.ts",
+                "keyword.control.default.js",
+                "keyword.control.default.jsx",
+                "keyword.control.default.tsx",
                 "storage.modifier.static.cpp",
                 "storage.modifier.specifier.functional.post-parameters.const.cpp",
                 "storage.modifier.virtual.cpp",
@@ -845,6 +880,7 @@
                 "punctuation.terminator",
                 "punctuation.definition",
                 "punctuation.accessor",
+                "punctuation.section",
                 "keyword.operator.type.annotation.tsx",
                 "keyword.operator.type.annotation.ts",
                 "keyword.operator.type.annotation.jsx",

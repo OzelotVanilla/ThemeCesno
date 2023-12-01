@@ -15,6 +15,17 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.7]
+
+### Fixed
+
+* Some flow keywords cannot be highlighted correctly.
+
+### Change
+
+* Add modifier `default` for JavaScript/TypeScript.
+* Change colour of import path for C++.
+
 ## [0.0.6]
 
 ### Fixed

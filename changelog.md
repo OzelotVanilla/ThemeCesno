@@ -15,6 +15,16 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.8]
+
+### Fixed
+
+* Wrong colorisation of string, comment, punctuation, enum member and operators.
+
+### Added
+
+* Colour of the asterisk of JavaScript generator.
+
 ## [0.0.7]
 
 ### Fixed

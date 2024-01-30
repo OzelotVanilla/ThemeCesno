@@ -89,7 +89,10 @@
             "fontStyle": ""
         },
         "enum": "#e198b4",
-        "enumMember": "#eb9b6f",
+        "enumMember": {
+            "foreground": "#eb9b6f",
+            "fontStyle": ""
+        },
         "interface": "#a7b446",
         "namespace": "#007bbb",
         "selfParameter": "#cf747b",
@@ -113,6 +116,7 @@
                 "keyword.other.type.php",
                 "source keyword.type.cs",
                 "keyword.other.class.cs",
+                "keyword.control.type.ts",
                 "keyword.operator.optional.tsx",
                 "keyword.operator.optional.ts",
                 "keyword.operator.optional.jsx",
@@ -129,11 +133,18 @@
             }
         },
         {
-            "name": "String",
+            "name": "String Fallback",
             "scope": [
                 "support.type.property-name.json",
                 "string.quoted.double",
                 "string.quoted.single",
+                "string.quoted.docstring.single.python",
+                "string.quoted.docstring.multi.python",
+                "string.template.js",
+                "string.template.ts",
+                "string.template.jsx",
+                "string.template.tsx",
+                "string.regexp.ts"
                 // "string"
             ],
             "settings": {
@@ -150,7 +161,7 @@
             }
         },
         {
-            "name": "Comment",
+            "name": "Comment Fallback",
             "scope": [
                 "comment",
                 "comment.block.documentation.js",
@@ -162,6 +173,7 @@
                 "punctuation.definition.comment",
                 "punctuation.definition.comment.begin.documentation.cpp",
                 "punctuation.definition.comment.end.documentation.cpp",
+                "variable.other.link.underline.jsdoc"
             ],
             "settings": {
                 "foreground": "#b3ada0"
@@ -193,7 +205,8 @@
                 "constant.language.php",
                 "constant.language.null.cs",
                 "constant.language.true.cs",
-                "constant.language.false.cs"
+                "constant.language.false.cs",
+                "constant.language.c"
             ],
             "settings": {
                 "foreground": "#c5c56a",
@@ -340,6 +353,9 @@
                 "keyword.operator.bitwise",
                 "keyword.operator.wordlike",
                 "keyword.operator.sizeof.cpp",
+                "support.function.magic.python",
+                "keyword.operator.quantifier.regexp",
+                "keyword.operator.negation.regexp"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -369,7 +385,8 @@
                 "keyword.control.throw",
                 "keyword.control.directive",
                 "keyword.other.verilog",
-                "keyword.other.important"
+                "keyword.other.important",
+                "keyword.control.c"
             ],
             "settings": {
                 "foreground": "#bc64a4",
@@ -393,11 +410,12 @@
             }
         },
         {
-            "name": "Parameter",
+            "name": "Parameter Fallback",
             // Including fallback
             "scope": [
                 "variable.other.jsdoc",
-                "entity.name.variable.parameter.cs"
+                "entity.name.variable.parameter.cs",
+                "variable.parameter.function-call.python"
             ],
             "settings": {
                 "foreground": "#e0a37e"
@@ -594,7 +612,8 @@
                 "storage.type.function.ts",
                 "storage.type.function.jsx",
                 "storage.type.function.js",
-                "keyword.operator.arrow.cs"
+                "keyword.operator.arrow.cs",
+                "keyword.generator.asterisk.ts"
             ],
             "settings": {
                 "foreground": "#0094c8",
@@ -888,7 +907,10 @@
                 "meta.field.declaration",
                 "meta.type.annotation",
                 "punctuation.destructuring",
-                "meta.parameter.object-binding-pattern"
+                "meta.parameter.object-binding-pattern",
+                "constant.other.ellipsis.python",
+                "punctuation.definition.string.begin",
+                "punctuation.definition.string.end"
             ],
             "settings": {
                 "foreground": "#777777",

@@ -21,6 +21,8 @@ Content
 
 ![Quiet Light Example](https://github.com/OzelotVanilla/ThemeCesno/blob/main/img/Quiet%20Cesno%20Example.png?raw=true)
 
+![Quiet Light Example 2](https://github.com/OzelotVanilla/ThemeCesno/blob/main/img/Quiet%20Cesno%20Example%202.png?raw=true)
+
 For developers
 ====
 

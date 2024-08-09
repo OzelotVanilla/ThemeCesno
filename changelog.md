@@ -15,6 +15,18 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.9]
+
+### Added
+
+* Colour for RegExp, including grouping, anchor, and operators.
+* Colour for variable in default library.
+* Fallback colour on C/GDScript keyword and python magic method.
+
+### Fixed
+
+* Fix and add colour for *At-rule import* for CSS.
+
 ## [0.0.8]
 
 ### Fixed

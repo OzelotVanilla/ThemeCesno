@@ -81,7 +81,7 @@
             "foreground": "#f39800"
         },
         "variable.defaultLibrary": {
-            "foreground": "#A69425"
+            "foreground": "#a69425"
         },
         "builtinConstant": "#c5c56a",
         "parameter": {
@@ -353,9 +353,7 @@
                 "keyword.operator.bitwise",
                 "keyword.operator.wordlike",
                 "keyword.operator.sizeof.cpp",
-                "support.function.magic.python",
-                "keyword.operator.quantifier.regexp",
-                "keyword.operator.negation.regexp"
+                "support.function.magic.python"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -386,7 +384,8 @@
                 "keyword.control.directive",
                 "keyword.other.verilog",
                 "keyword.other.important",
-                "keyword.control.c"
+                "keyword.control.c",
+                "keyword.language.gdscript"
             ],
             "settings": {
                 "foreground": "#bc64a4",
@@ -649,7 +648,8 @@
                 "keyword.control.from.tsx",
                 "keyword.control.from.js",
                 "keyword.control.from.jsx",
-                "keyword.control.at-rule.import.scss"
+                "keyword.control.at-rule.import.scss",
+                "keyword.control.at-rule.import.css"
             ],
             "settings": {
                 "foreground": "#c4a3bf",
@@ -949,6 +949,56 @@
             ],
             "settings": {
                 "foreground": "#007bbb",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "RegExp Anchor",
+            "scope": [
+                "keyword.control.anchor.regexp"
+            ],
+            "settings": {
+                "foreground": "#4c6473",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "RegExp Operator",
+            "scope": [
+                "keyword.operator.or.regexp",
+                "keyword.operator.quantifier.regexp",
+                "keyword.operator.negation.regexp",
+            ],
+            "settings": {
+                "foreground": "#a59aca",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "RegExp Special Constant (e.g. \\s)",
+            "scope": [
+                "constant.other.character-class.regexp"
+            ],
+            "settings": {
+                "foreground": "#a69425"
+            }
+        },
+        {
+            "name": "RegExp Group",
+            "scope": [
+                "meta.group.regexp",
+            ],
+            "settings": {
+                "foreground": "#777777"
+            }
+        },
+        {
+            "name": "RegExp Type Suffix (e.g. `g`)",
+            "scope": [
+                "string.regexp.ts keyword.other.ts"
+            ],
+            "settings": {
+                "foreground": "#9ed44c",
                 "fontStyle": "bold"
             }
         },

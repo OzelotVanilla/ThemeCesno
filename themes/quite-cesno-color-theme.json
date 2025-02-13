@@ -125,7 +125,8 @@
                 "keyword.other.enum.cs",
                 "keyword.type",
                 "meta.encoding",
-                "keyword.other.suffix.literal.user-defined.string"
+                "keyword.other.suffix.literal.user-defined.string",
+                "keyword.control.satisfies.ts"
             ],
             "settings": {
                 "foreground": "#9ed44c",
@@ -144,7 +145,8 @@
                 "string.template.ts",
                 "string.template.jsx",
                 "string.template.tsx",
-                "string.regexp.ts"
+                "string.regexp.ts",
+                "string.regexp.js"
                 // "string"
             ],
             "settings": {
@@ -353,7 +355,9 @@
                 "keyword.operator.bitwise",
                 "keyword.operator.wordlike",
                 "keyword.operator.sizeof.cpp",
-                "support.function.magic.python"
+                "support.function.magic.python",
+                "keyword.operator.rest.ts",
+                "keyword.operator.rest.js"
             ],
             "settings": {
                 "foreground": "#a59aca",
@@ -654,6 +658,17 @@
             "settings": {
                 "foreground": "#c4a3bf",
                 "fontStyle": "bold"
+            }
+        },
+        {
+            // The name part in the name resolution statement.
+            "name": "Name Resolution",
+            "scope": [
+                "meta.export.ts", // Fallback for asterisk sign in TypeScript when import/export.
+                "constant.language.import-export-all.js" // Also, for JavaScript.
+            ],
+            "settings": {
+                "foreground": "#c4a3bf"
             }
         },
         {
@@ -989,7 +1004,16 @@
                 "meta.group.regexp",
             ],
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#98623c"
+            }
+        },
+        {
+            "name": "RegExp Range",
+            "scope": [
+                "constant.other.character-class.range.regexp"
+            ],
+            "settings": {
+                "foreground": "#b78161"
             }
         },
         {

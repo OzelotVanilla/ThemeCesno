@@ -15,6 +15,20 @@ for a version number `major.minor.update.patch`:
 
 ## [Unreleased]
 
+## [0.0.10]
+
+### Added
+
+* Fallback colour for JavaScript/TypeScript's import/export asterisk sign.
+* Colour for TypeScript's `satisfies` (using same colour as `type` keyword).
+* Colour for regexp's range (like `a-z` in `/[a-z]/`).
+* Colour for JavaScript RegExp string colour.
+* Colour for JavaScript/TypeScript's rest parameter.
+
+### Fixed
+
+* Colour of regexp's group.
+
 ## [0.0.9]
 
 ### Added
